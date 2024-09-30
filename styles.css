@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Luckiest Guy', sans-serif;
+    background-color: #a2d2ff;
+    
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header, footer {
+    background: rgba(60, 90, 160, 0.9);
+    color: #fff; 
+    text-align: center;
+    padding: 3em 0;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before, footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+    z-index: 0;
+}
+
+header h1, footer p {
+    margin: 0;
+    font-size: 3.5em;
+    z-index: 2;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #f7df1e;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+    z-index: 2;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Bangers', cursive;
+    font-weight: 700;
+    padding: 1em 2em;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 15px;
+    background-color: rgba(60, 90, 160, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+    background-color: #f7df1e;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 50px;
+    max-width: 950px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.7);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+main:hover {
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.9);
+    transform: translateY(-10px);
+}
+main img {
+    max-width: 80%;
+    height: auto;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    color: #3b3b6d;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+p {
+    margin-bottom: 1.8em;
+    font-size: 1.3em;
+    color: #333;
+}
+
+.planet-image {
+    max-width: 85%; 
+    height: auto;
+    margin: 25px 0;
+    border: 5px solid #3b3b6d;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.5em;
+    z-index: 2;
+    position: relative;
+    color: #f7df1e;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 40px 0;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 2px solid #f7df1e;
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+    font-size: 1.2em;
+    color: #333;
+}
+
+th {
+    background-color: #3b3b6d; 
+    color: #f7df1e;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 5px solid #3b3b6d;
+}
+
+.gallery img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
